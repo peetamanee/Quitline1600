@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quitline 1600 - Safe Haven Space</title>
+    <!-- Google Fonts: Prompt & Inter for Premium Bilingual Aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to separated CSS stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-content">
+        <a href="#top" class="logo-container">
+          <div class="logo-icon">1600</div>
+          <div class="logo-text">Quitline</div>
+        </a>
+        
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Open menu" id="nav-toggle-btn">
+            <span class="hamburger"></span>
+          </button>
+          <ul class="nav-menu" id="nav-menu-list">
+            <li><a href="#hero" class="nav-link" data-translate="nav_home">หน้าแรก</a></li>
+            <li><a href="#services" class="nav-link" data-translate="nav_services">บริการ</a></li>
+            <li><a href="#stress-relief" class="nav-link" data-translate="nav_stress">วิธีคลายเครียด</a></li>
+            <li><a href="#testimonials" class="nav-link" data-translate="nav_reviews">รีวิว</a></li>
+            <li><a href="#faq" class="nav-link" data-translate="nav_faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <!-- Language Switcher -->
+          <div class="lang-switcher">
+            <button id="lang-btn-th" class="lang-btn active">TH</button>
+            <button id="lang-btn-en" class="lang-btn">EN</button>
+          </div>
+          
+          <!-- Quick Contact -->
+          <a href="tel:1600" class="btn-call" data-translate="btn_call">โทร 1600</a>
+          <button class="btn-chat open-chat-btn" data-translate="btn_chat">ทักแชทปรึกษาฟรี</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section 1: Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title" data-translate="hero_title">
+            รู้สึกเครียด แต่ไม่อยากพึ่งบุหรี่แล้วใช่ไหม?
+          </h1>
+          <p class="hero-subtitle" data-translate="hero_subtitle">
+            ให้เราช่วยคุณหาทางออกที่ดีกว่า พื้นที่ตรงนี้พร้อมเป็นเซฟโซนที่โอบรับและไม่มีการตัดสินใดๆ เพื่อให้คุณได้พักผ่อนอย่างสบายใจ
+          </p>
+          <div class="hero-buttons">
+            <a href="#stress-relief" class="btn-stress-now" data-translate="btn_stress_now">รู้สึกเครียดตอนนี้</a>
+            <button class="btn-chat-hero open-chat-btn" data-translate="btn_chat_hero">ทักแชทปรึกษาฟรี</button>
+          </div>
+        </div>
+        
+        <div class="hero-illustration">
+          <img src="./images/quitline_hero_banner.jpg" alt="Work Stress Management Illustration" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Services Section (ST-5, Gift to Yourself & Nicotine Trap) -->
+    <section id="services" class="services section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-translate="sec_services_title">บริการของเรา</h2>
+        </header>
+
+        <div class="services-grid">
+          <!-- Service Card 1: Gift to Yourself Mission -->
+          <div class="service-card card">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_1_title">ของขวัญแด่ตัวคุณเอง</h3>
+            <p class="service-description" data-translate="service_1_desc">
+              โฟกัสแค่ในแต่ละวัน เปลี่ยนแปลงความชินทีละนิด เพื่อมอบของขวัญที่งดงามที่สุดให้ตัวเองด้วยความภูมิใจ
+            </p>
+            <div class="service-footer">
+              <button id="start-gift-30-btn" class="button-primary" data-translate="btn_start">เริ่ม</button>
+            </div>
+          </div>
+
+          <!-- Service Card 2: ST-5 Stress Test -->
+          <div class="service-card card">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_3_title">แบบประเมินความเครียด (ST-5)</h3>
+            <p class="service-description" data-translate="service_3_desc">
+              แบบประเมินความเครียดสะสม 5 ข้อ พัฒนาโดยกรมสุขภาพจิต กระทรวงสาธารณสุข เพื่อรับข้อแนะนำกิจกรรมผ่อนคลายด่วน
+            </p>
+            <div class="service-footer">
+              <button id="start-st5-btn" class="button-primary" data-translate="btn_start">เริ่ม</button>
+            </div>
+          </div>
+
+          <!-- Service Card 3: Nicotine Trap -->
+          <div class="service-card card">
+            <div class="service-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-title" data-translate="service_2_title">รู้ทัน...กับดักนิโคติน</h3>
+            <p class="service-description" data-translate="service_2_desc">
+              นิโคตินไม่ได้ช่วยคลายเครียดจริง แต่สร้างวงจรเสพติดที่ทำให้เครียดง่ายขึ้น มาทำความเข้าใจกลไกและวิธีรับมือกัน
+            </p>
+            <div class="service-footer">
+              <button id="read-more-btn" class="button-secondary" data-translate="btn_read_more">อ่านเพิ่มเติม</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Stress Relief Section (Hydration, Ambient Audio, Desk Stretch) -->
+    <section id="stress-relief" class="stress-relief section bg-mist-subtle">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-translate="sec_stress_title">วิธีคลายเครียดสำหรับคุณ</h2>
+          <p class="section-subtitle" data-translate="sec_stress_subtitle">
+            เลือกวิธีที่เหมาะกับคุณในเวลานี้ เพื่อรีเซ็ตร่างกายและจิตใจใน 60-90 วินาที
+          </p>
+        </header>
+
+        <div class="methods-grid">
+          <!-- Method 1: Mindful Hydration -->
+          <div class="method-card card">
+            <h3 class="method-title" data-translate="method_1_title">การจิบน้ำเย็นลดความอยาก (Mindful Hydration)</h3>
+            <p class="method-description" data-translate="method_1_desc">
+              เมื่อรู้สึกอยากสูบหรือเหงาปาก การจิบน้ำเย็นจัดช้าๆ 5 อึกจะช่วยระงับตัวรับนิโคตินและล้างปุ่มรับรสในช่องปากได้ทันที
+            </p>
+            <div class="method-footer">
+              <span class="method-time">60s</span>
+              <button class="button-primary practice-btn" data-method="hydration" data-translate="btn_start">เริ่ม</button>
+            </div>
+          </div>
+
+          <!-- Method 2: Calming Ambient Audio -->
+          <div class="method-card card">
+            <h3 class="method-title" data-translate="method_2_title">เสียงบำบัดคลายสมอง (Ambient Audio)</h3>
+            <p class="method-description" data-translate="method_2_desc">
+              ปรับคลื่นสมองเป็น Alpha wave (432Hz) หรือฟังเสียงฝนตก/คลื่นทะเล เพื่อลดระดับ Cortisol ปลอบประโลมความตึงเครียด
+            </p>
+            <div class="method-footer">
+              <span class="method-time">60s</span>
+              <button class="button-primary practice-btn" data-method="audio" data-translate="btn_start">เริ่ม</button>
+            </div>
+          </div>
+
+          <!-- Method 3: Desk Stretching -->
+          <div class="method-card card">
+            <h3 class="method-title" data-translate="method_3_title">ยืดเส้นยืดสายที่โต๊ะทำงาน (Desk Stretch)</h3>
+            <p class="method-description" data-translate="method_3_desc">
+              คลายการเกร็งตัวของกล้ามเนื้อ คอ บ่า ไหล่ และหลัง เพื่อกระตุ้นสาร Endorphin ระบายฮอร์โมนแห่งความเครียด
+            </p>
+            <div class="method-footer">
+              <span class="method-time">90s</span>
+              <button class="button-primary practice-btn" data-method="stretch" data-translate="btn_start">เริ่ม</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Savings Calculator -->
+        <div class="calculator-section" id="savings-calc-container">
+          <h3 class="section-title text-center" style="display:block; margin-bottom: 2rem;" data-translate="calc_section_title">เครื่องคำนวณเปรียบเทียบเงินออม</h3>
+          <div class="calc-container card">
+            <div class="calc-inputs">
+              <div class="calc-slider-group">
+                <div class="slider-header">
+                  <span data-translate="calc_cigarettes_label">ปริมาณการสูบเฉลี่ย (มวน/วัน)</span>
+                  <span class="val-highlight"><span id="cigs-val-display">10</span> <span data-translate="calc_cigs_unit">มวน</span></span>
+                </div>
+                <input type="range" min="0" max="40" value="10" class="calc-slider" id="cigs-slider"/>
+              </div>
+              <div class="calc-slider-group">
+                <div class="slider-header">
+                  <span data-translate="calc_price_label">ราคาเฉลี่ยต่อซอง (20 มวน)</span>
+                  <span class="val-highlight"><span id="price-val-display">100</span> THB</span>
+                </div>
+                <input type="range" min="60" max="180" step="5" value="100" class="calc-slider" id="price-slider"/>
+              </div>
+            </div>
+
+            <div class="calc-results">
+              <div class="calc-result-box">
+                <p class="calc-res-label" data-translate="calc_weekly_label">เงินออมต่อสัปดาห์</p>
+                <p class="calc-res-val"><span id="res-weekly">350</span> ฿</p>
+              </div>
+              <div class="calc-result-box">
+                <p class="calc-res-label" data-translate="calc_monthly_label">เงินออมต่อเดือน</p>
+                <p class="calc-res-val"><span id="res-monthly">1,500</span> ฿</p>
+              </div>
+              <div class="calc-result-box span-2">
+                <p class="calc-res-label" data-translate="calc_milestone_label">เงินออมสะสมรายปี (12 เดือน)</p>
+                <p class="calc-res-val"><span id="res-milestone">18,000</span> ฿</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-translate="sec_reviews_title">รีวิวจากเพื่อนร่วมทาง</h2>
+          <p class="section-subtitle" data-translate="sec_reviews_subtitle">
+            เรื่องราวและกำลังใจจากคนทำงานออฟฟิศที่สามารถก้าวผ่านความเครียดโดยไม่ต้องพึ่งบุหรี่
+          </p>
+        </header>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text" data-translate="review_1_text">
+              "ผมเคยคิดว่าบุหรี่คือคำตอบเดียวเวลาเครียดเรื่องงาน แต่พอลองฝึกสมาธิจิบน้ำ 60 วินาทีตอนอยากสูบ มันช่วยให้สมองลืมความอยากบุหรี่ได้สนิทเลยครับ"
+            </p>
+            <div class="testimonial-user">
+              <h4 class="user-name" data-translate="review_1_name">ต้น</h4>
+              <p class="user-info" data-translate="review_1_age">อายุ 29 ปี (นักวิเคราะห์ระบบ)</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text" data-translate="review_2_text">
+              "การเปลี่ยนมาเดินยืดเส้นยืดสายและคุยแชตกับสายด่วนแทนการเดินไปสูบบุหรี่ช่วงพักเบรก ทำให้สุขภาพดีขึ้นมาก ไม่เหม็นติดตัวตอนเข้าประชุมด้วยค่ะ"
+            </p>
+            <div class="testimonial-user">
+              <h4 class="user-name" data-translate="review_2_name">แพท</h4>
+              <p class="user-info" data-translate="review_2_age">อายุ 27 ปี (เจ้าหน้าที่การตลาด)</p>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card card">
+            <div class="quote-icon">“</div>
+            <p class="testimonial-text" data-translate="review_3_text">
+              "การฟังดนตรีบำบัด 432Hz และประเมิน ST-5 ทำให้ผมรู้ว่าความเครียดพุ่งเพราะงานหนัก เว็บบอร์ดนี้เป็นตัวช่วยระบายสติที่ดีเยี่ยมในการลดความอยากสูบ"
+            </p>
+            <div class="testimonial-user">
+              <h4 class="user-name" data-translate="review_3_name">อ๊อฟ</h4>
+              <p class="user-info" data-translate="review_3_age">อายุ 31 ปี (ผู้จัดการฝ่ายบุคคล)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: FAQ Section (Custom Safe Zone FAQs) -->
+    <section id="faq" class="faq section bg-mist-subtle">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-translate="sec_faq_title">คำถามที่พบบ่อย (FAQ)</h2>
+          <p class="section-subtitle" data-translate="sec_faq_subtitle">
+            ข้อสงสัยและข้อมูลการใช้งานที่จะช่วยเพิ่มความสบายใจและความอุ่นใจให้คุณตลอดการเข้าใช้บริการ
+          </p>
+        </header>
+
+        <div class="faq-list">
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span data-translate="faq_1_q">เว็บไซต์นี้จะช่วยฉันในระหว่างวันทำงานที่เครียดจัดได้อย่างไรบ้าง?</span>
+              <svg class="faq-icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_1_a">เรามีแบบฝึกหัดสั้นๆ ความยาว 60-90 วินาที เช่น การฝึกจิบน้ำบำบัดประสาท หรือการเปิดฟังเสียงธรรมชาติลด Cortisol ซึ่งออกแบบมาให้เหมาะสมกับการขจัดความเหนื่อยล้าทางสมองและความคิดกังวลได้ทันทีที่โต๊ะทำงาน โดยคุณไม่จำเป็นต้องเดินออกไปสูบบุหรี่</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span data-translate="faq_2_q">การทำแบบประเมินระดับความเครียดด่วนมีความเป็นส่วนตัวและปลอดภัยไหม?</span>
+              <svg class="faq-icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_2_a">ปลอดภัย 100% ครับ ข้อมูลการตอบคำถามประเมินความเครียดและการคำนวณทั้งหมดจะประมวลผลบนบราวเซอร์ของเครื่องคุณโดยไม่มีการบันทึกหรือส่งออกข้อมูลออกภายนอก ทำให้คุณมั่นใจในสิทธิและความเป็นส่วนตัวที่ออฟฟิศได้อย่างเต็มที่</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span data-translate="faq_3_q">หากฉันรู้สึกอยากคุยกับคนจริงๆ เพื่อวางแผนการเลิกบุหรี่ สามารถทำได้อย่างไร?</span>
+              <svg class="faq-icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_3_a">คุณสามารถเปิดกล่องแชตเพื่อสนทนากับแชตบอตน้องวันใหม่เบื้องต้น หรือหากต้องการคำปรึกษาเพื่อวางแผนร่วมกับผู้เชี่ยวชาญ (นักจิตวิทยาช่วยเลิกบุหรี่) คุณสามารถโทรหาสายด่วนเลิกบุหรี่แห่งชาติ 1600 ได้ฟรีทันทีจากลิงก์บนแถบเมนูด้านบน</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span data-translate="faq_4_q">แชตบอตน้องวันใหม่จะช่วยฉันได้อย่างไรในช่วงที่เกิดความอยากบุหรี่รุนแรง?</span>
+              <svg class="faq-icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="faq-content">
+              <p data-translate="faq_4_a">น้องวันใหม่เปรียบเสมือนเพื่อนคู่คิด AI (Peer Support) ที่พร้อมโอบรับทุกอารมณ์ คอยให้ข้อมูลวิทยาศาสตร์ แนะนำกิจกรรมเบี่ยงเบนความสนใจในระยะสั้น และให้คำชี้แนะเพื่อดึงสติให้คุณมีพลังเอาชนะความอยากชั่ววูบได้โดยไม่ตัดสินผลลัพธ์ครับ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <p class="footer-logo">Quitline 1600</p>
+          <p class="footer-tagline" data-translate="footer_desc">สนับสนุนและช่วยเหลือสังคมทำงานออฟฟิศในการเลิกบุหรี่อย่างมีประสิทธิภาพและปลอดภัย</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2026 Quitline 1600. All rights reserved.</p>
+          <p class="footer-subtext" data-translate="footer_disclaimer">สายด่วนเลิกบุหรี่แห่งชาติ โทร 1600 ปรึกษาฟรี ไม่มีค่าใช้จ่าย</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVE MODALS -->
+
+    <!-- 1. Gift to Yourself Goal Modal -->
+    <div id="gift-30-modal" class="modal">
+      <div class="modal-content card max-w-lg">
+        <button class="modal-close" id="close-gift-30-modal">&times;</button>
+        <h2 class="modal-title" style="margin-bottom: 1.5rem; color: var(--primary-color);" data-translate="modal_gift_title">ของขวัญแด่ตัวคุณเอง</h2>
+        
+        <div class="nicotine-layout">
+          <!-- Left side: Text sections -->
+          <div class="nicotine-steps-list">
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="gift_step_1_title">โฟกัสแค่ทีละวัน</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="gift_step_1_desc">"ไม่ต้องมองไปไกลถึง 1 ปี หรือคิดเรื่อง 365 วันข้างหน้าให้รู้สึกเหนื่อยเลย โฟกัสแค่ 'วันนี้ฉันไม่สูบ' พรุ่งนี้ตื่นมาบอกตัวเองใหม่ ทำแค่วันนี้ให้ดีที่สุดก็พอ"</p>
+            </div>
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="gift_step_2_title">สร้างความเคยชินทีละนิด</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="gift_step_2_desc">"เมื่อรู้สึกอยากสูบ ลองเปลี่ยนมาจิบน้ำเย็นช้าๆ หรือสวมหูฟังคลื่นเสียงธรรมชาติสัก 60 วินาที เพื่อรีเซ็ตอารมณ์ชั่วคราว การทำสิ่งเล็กๆ เหล่านี้จะค่อยๆ เปลี่ยนเป็นความชินโดยที่คุณไม่ต้องพยายามอย่างหักโหม"</p>
+            </div>
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="gift_step_3_title">สะสมสู่ของขวัญชิ้นใหญ่</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="gift_step_3_desc">"เมื่อสะสมวันละนิดไปเรื่อยๆ ก่อนที่คุณจะทันรู้ตัว... คุณจะพบว่าคุณก้าวข้ามผ่านเวลามาได้ครบปี และนั่นจะกลายเป็นของขวัญที่งดงามที่สุดที่คุณมอบให้ตัวเองด้วยความภูมิใจ"</p>
+            </div>
+          </div>
+          
+          <!-- Right side: Beautiful illustrative image -->
+          <div class="nicotine-trap-infographic">
+            <img src="./images/gift_infographic.jpg" alt="Gift Aspiration Graphic" style="width:100%; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+          </div>
+        </div>
+
+        <div class="trap-insight-box" style="margin-bottom: 1.5rem; text-align: center;">
+          <p style="font-weight: 700; color: var(--primary-color);" data-translate="ftnd_suggestion">เรามีบริการโทร/ทักแชท ปรึกษาการเลิกบุหรี่ ฟรี</p>
+        </div>
+
+        <div class="result-actions">
+          <a href="tel:1600" class="button-primary btn-block" data-translate="btn_call">โทร 1600 ปรึกษาเลิกบุหรี่ฟรี</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. ST-5 Test Modal -->
+    <div id="st5-test-modal" class="modal">
+      <div class="modal-content card">
+        <button class="modal-close" id="close-st5-modal">&times;</button>
+        <div id="st5-intro">
+          <h2 data-translate="modal_st5_title">แบบประเมินความเครียดสะสม (ST-5)</h2>
+          <p data-translate="modal_st5_desc">ประเมินสภาวะทางจิตใจและความเครียดสะสมของคุณในช่วง 2-4 สัปดาห์ที่ผ่านมาโดยกระทรวงสาธารณสุข</p>
+          <button id="start-st5-questions-btn" class="button-primary btn-block" data-translate="btn_start">เริ่ม</button>
+        </div>
+        
+        <div id="st5-question-container" style="display: none;">
+          <div class="question-progress"><span id="st5-current-q">1</span>/5</div>
+          <h3 id="st5-question-text" class="question-title">คำถามจะแสดงที่นี่</h3>
+          <div class="options-list" id="st5-question-options">
+            <!-- Options dynamically added -->
+          </div>
+        </div>
+
+        <div id="st5-result" style="display: none;" class="test-result-pane">
+          <h3 data-translate="modal_st5_result_title">ระดับความเครียดสะสมของคุณคือ</h3>
+          <div class="result-badge" id="st5-badge">ระดับปานกลาง</div>
+          <p id="st5-suggestion" class="result-text">คำแนะนำความเครียดจะปรากฏที่นี่</p>
+          <div class="result-actions">
+            <button id="recommendation-st5-btn" class="button-primary" data-translate="modal_result_btn">ลองวิธีผ่อนคลายที่แนะนำ</button>
+            <button id="restart-st5-btn" class="button-secondary" data-translate="modal_st5_again">ประเมินอีกครั้ง</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Nicotine Trap Modal -->
+    <div id="nicotine-modal" class="modal">
+      <div class="modal-content card max-w-lg">
+        <button class="modal-close" id="close-nicotine-modal">&times;</button>
+        <h2 class="modal-title" data-translate="modal_trap_title">รู้ทัน...กับดักนิโคติน</h2>
+        
+        <div class="nicotine-layout">
+          <div class="nicotine-trap-infographic">
+            <img src="./images/nicotine_trap_clean_diagram.jpg" alt="Nicotine Trap Cycle Diagram" style="width:100%; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+          </div>
+          <div class="nicotine-steps-list">
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="trap_step_1_title">1. ความเครียดสะสมจากงาน</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="trap_step_1_desc">ความกดดันทำให้ร่างกายหลั่งฮอร์โมนเครียด สมองจึงสั่งการให้หาทางออกแบบเดิมคือการสูบบุหรี่</p>
+            </div>
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="trap_step_2_title">2. นิโคตินดิ่งฮวบ & เกิดอาการถอน</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="trap_step_2_desc">หลังจากสูบชั่วครู่ นิโคตินจะสลายตัวอย่างรวดเร็ว ทำให้คุณเกิดอาการหงุดหงิด วิตกกังวล และเครียดง่ายกว่าปกติ</p>
+            </div>
+            <div class="nicotine-step-item">
+              <strong style="color: var(--primary-color);" data-translate="trap_step_3_title">3. กับดักการสูบซ้ำ</strong>
+              <p style="font-size: 0.85rem; color: var(--text-muted);" data-translate="trap_step_3_desc">คุณสูบบุหรี่มวนใหม่เพื่อระงับความหงุดหงิด สมองจึงจำว่าบุหรี่ช่วยแก้เครียด ทั้งที่จริงมันแค่ระงับอาการถอนยาชั่วคราว</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trap-insight-box">
+          <p data-translate="trap_insight">💡 **ข้อคิดทางวิทยาศาสตร์:** การสูบบุหรี่ไม่ได้ช่วยแก้เครียดจากงาน แต่คือการลดความตึงเครียดที่ตัวบุหรี่สร้างขึ้นเอง! วิธีคลายเครียดตามธรรมชาติจึงเป็นทางออกที่แท้จริง</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Interactive Exercise Modal (Hydration, Stretch) -->
+    <div id="breathing-modal" class="modal">
+      <div class="modal-content card max-w-sm text-center">
+        <button class="modal-close" id="close-breathing-modal">&times;</button>
+        <h2 id="breathing-exercise-title" class="exercise-name">ฝึกปฏิบัติ</h2>
+        <p id="breathing-exercise-desc" class="exercise-intro-text">ผ่อนคลายร่างกายตามจังหวะคำแนะนำ</p>
+        
+        <div class="breathing-container">
+          <div class="breathing-circle-outer">
+            <div class="breathing-circle-inner" id="breathing-circle"></div>
+          </div>
+          <div class="breathing-instruction" id="breathing-instruction-text">เตรียมตัว...</div>
+          <div class="breathing-timer" id="breathing-time-left">60s</div>
+        </div>
+
+        <div class="breathing-progress-bar">
+          <div class="breathing-progress-fill" id="breathing-progress"></div>
+        </div>
+
+        <div class="breathing-actions">
+          <button id="start-breathing-btn" class="button-primary btn-block" data-translate="btn_start">เริ่ม</button>
+          <button id="stop-breathing-btn" class="button-secondary btn-block" style="display: none;" data-translate="btn_stop_breath">หยุดกิจกรรม</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Calming Audio Modal (With Integrated Breathing Guide & REAL Web Audio synthesizer) -->
+    <div id="audio-modal" class="modal">
+      <div class="modal-content card max-w-sm text-center">
+        <button class="modal-close" id="close-audio-modal">&times;</button>
+        <h2 id="audio-exercise-title" data-translate="audio_modal_title">เสียงบำบัดคลายสมอง</h2>
+        <p id="audio-exercise-desc" data-translate="audio_modal_desc">เลือกฟังเสียงความถี่ผ่อนคลายเพื่อเปลี่ยนสถานะอารมณ์ทันที</p>
+        
+        <!-- Interactive Audio Breathing Guide -->
+        <div class="audio-breathing-container" style="display: flex; flex-direction: column; align-items: center; margin: 1.5rem 0 0.5rem;">
+          <div class="breathing-circle-outer" style="width: 100px; height: 100px; border-color: var(--primary-color);">
+            <div class="breathing-circle-inner" id="audio-breathing-circle" style="width: 50px; height: 50px;"></div>
+          </div>
+          <div id="audio-breathing-instruction" style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-top: 0.5rem;">เตรียมตัว...</div>
+        </div>
+
+        <div class="audio-player-container" style="margin: 1.5rem 0; padding: 1.25rem; background-color: var(--bg-color); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+          <div class="sound-selector" style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 1.25rem; flex-wrap: wrap;">
+            <button class="sound-btn active" data-sound="rain" data-translate="sound_rain">🌧️ เสียงฝนตก</button>
+            <button class="sound-btn" data-sound="waves" data-translate="sound_waves">🌊 เสียงคลื่นทะเล</button>
+            <button class="sound-btn" data-sound="ambient" data-translate="sound_ambient">🎵 เสียงเปียโน</button>
+          </div>
+          
+          <!-- Mock Audio Waveform Visualization -->
+          <div class="audio-visualizer" style="display: flex; justify-content: center; align-items: flex-end; gap: 4px; height: 50px; margin-bottom: 1.25rem;">
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+            <div class="wave-bar" style="width: 4px; height: 10px; background-color: var(--accent-sage); transition: height 0.2s;"></div>
+          </div>
+
+          <div class="audio-controls" style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
+            <button id="audio-play-btn" class="button-primary" style="width: 50px; height: 50px; border-radius: 50%; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">▶</button>
+            <span id="audio-timer" style="font-weight: 700; color: var(--primary-color);">01:00</span>
+          </div>
+        </div>
+
+        <button id="close-audio-confirm-btn" class="button-secondary btn-block" data-translate="btn_stop_breath">ปิดหน้าต่าง</button>
+      </div>
+    </div>
+
+    <!-- 6. Chat Support Simulator Modal (Nong Wanmai) -->
+    <div id="chat-modal" class="modal">
+      <div class="modal-content card max-w-md no-padding flex-col">
+        <div class="chat-header">
+          <img src="./images/nong_wanmai_avatar.jpg" alt="Nong Wanmai Avatar" class="chat-avatar-img">
+          <div class="chat-header-info">
+            <h3>น้องวันใหม่ AI QuitBot!</h3>
+            <p data-translate="chat_status">ผู้ช่วยปรึกษาเลิกบุหรี่ออนไลน์ (24 ชั่วโมง)</p>
+          </div>
+          <button class="modal-close-chat" id="close-chat-modal">&times;</button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages-box">
+          <div class="message bot-msg">
+            <p data-translate="chat_welcome">สวัสดีค่ะ ยินดีต้อนรับสู่ระบบปรึกษาเลิกบุหรี่ออนไลน์ของ Quitline 1600 หนูชื่อ 'น้องวันใหม่' มีเรื่องไม่สบายใจหรือกำลังอยากบุหรี่ตรงไหนทักปรึกษาหนูได้ฟรีเลยค่ะ</p>
+          </div>
+        </div>
+
+        <div class="chat-suggestions" id="chat-shortcuts">
+          <button class="chat-suggest-btn" data-msg-key="opt_stress" data-translate="chat_opt_1">เครียดเรื่องงาน อยากสูบบุหรี่ทำไงดี?</button>
+          <button class="chat-suggest-btn" data-msg-key="opt_withdrawal" data-translate="chat_opt_2">มีอาการหงุดหงิดหลังหยุดสูบ แก้ยังไง?</button>
+          <button class="chat-suggest-btn" data-msg-key="opt_call" data-translate="chat_opt_3">ต้องการโทรคุยกับเจ้าหน้าที่ 1600</button>
+        </div>
+
+        <div class="chat-footer">
+          <input type="text" id="chat-input" placeholder="เลือกเมนูแชต..." data-translate-placeholder="chat_placeholder" readonly/>
+          <button id="chat-send-btn" class="button-primary" disabled>ส่ง</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to separated Javascript source file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
